@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Content">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linvertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card"
+                    android:layout_width="0dp"
+                    android:layout_height="210dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="7dp"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/imgprofile"
+                            android:layout_width="150dp"
+                            android:layout_height="120dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginVertical="5dp"
+                            android:background="@mipmap/ic_launcher_round"
+                            android:scaleType="fitXY" />
+                        <TextView
+                            android:id="@+id/txtname"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textSize="13sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/imgprofile"
+                            android:text="First Name : "></TextView>
+                        <TextView
+                            android:layout_marginVertical="7dp"
+                            android:id="@+id/txtlastname"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/txtname"
+                            android:layout_toRightOf="@+id/imgprofile"
+                            android:text="Last Name : "></TextView>
+                        <TextView
+                            android:id="@+id/txtemail"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/txtlastname"
+                            android:layout_toRightOf="@+id/imgprofile"
+                            android:text="Email : "></TextView>
+                        <TextView
+                            android:id="@+id/tvname"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textSize="13sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/txtname"
+                            android:text="First Name Goes Here"></TextView>
+                        <TextView
+                            android:layout_marginVertical="7dp"
+                            android:id="@+id/tvlastname"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/txtname"
+                            android:layout_toRightOf="@+id/txtlastname"
+                            android:text="last name : "></TextView>
+                        <TextView
+                            android:id="@+id/tvemail"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/tvlastname"
+                            android:layout_toRightOf="@+id/txtemail"
+                            android:text="email  : "></TextView>
+
+
+
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
